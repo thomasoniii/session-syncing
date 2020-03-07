@@ -50,7 +50,11 @@ function App() {
       <p>Demonstration of communication across browser tabs.</p>
       <p>
         Open up as many copies of this page as you want.
-        <a href={window.location.href} target="_blank">
+        <a
+          href={window.location.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Open in new window
         </a>
       </p>
@@ -65,6 +69,12 @@ function App() {
         Observe the other windows - if they were logged into the same database,
         they'll automatically log out of it. If they were logged into a
         different database, they'll be unaffected.
+      </p>
+      <p>
+        Code is at{" "}
+        <a href="https://github.com/thomasoniii/session-syncing">
+          https://github.com/thomasoniii/session-syncing
+        </a>
       </p>
       <div>
         Select a database to log into:
